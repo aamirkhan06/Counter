@@ -10,7 +10,7 @@ let errorMessage = document.getElementById('error-Message');
 incrementBtn.addEventListener('click', () => {
     counter++;
     counterValue.innerHTML = counter;
-    toggleErrorMessage();
+    errorMessage.style.display='none';
 });
 
 // Decrement the counter value
@@ -20,7 +20,6 @@ decrementBtn.addEventListener('click', () => {
         counterValue.innerHTML = counter;
     } else {
         // Show error message
-        toggleErrorMessage();
         errorMessage.style.display='block';
     }
 });
@@ -31,9 +30,4 @@ resetBtn.addEventListener('click', () => {
     counterValue.innerHTML = counter;
     errorMessage.style.display='none';
 });
-
-// Toggle error message visibility
-function toggleErrorMessage() {
-    errorMessage.style.display = counter === 0 ? 'block' : 'none';
-}
 

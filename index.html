@@ -12,22 +12,23 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <!-- adding background color black and text-white using boot strap-->
+  <body class="bg-black text-white">
     <div
       class="container d-flex flex-column justify-content-center align-items-center vh-100"
     >
       <h1>Counter Using HTML</h1>
       <div class="d-flex align-items-center">
-        <p class="text-decoration-underline fs-3">
+        <p class="text-decoration-underline fs-4">
           Your current count is:
           <span id="counter-value" class="fw-bolder">0</span>
         </p>
       </div>
       <div id="error-Message" class="text-danger fw-bolder mb-3">Error: cannot go below 0</div>
       <div class="d-flex gap-2">
-        <button id="increment-btn" class="btn btn-success">Increment</button>
-        <button id="decrement-btn" class="btn btn-danger">Decrement</button>
-        <button id="reset" class="btn btn-secondary">Clear</button>
+        <button id="increment-btn" class="btn bg-white px-3">Increment</button>
+        <button id="decrement-btn" class="btn bg-white px-3">Decrement</button>
+        <button id="reset" class="btn btn-outline-light px-4">Clear</button>
       </div>
     </div>
     <script src="./script.js"></script>
