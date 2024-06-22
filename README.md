@@ -1,2 +1,2 @@
 # Counter
-Counter using html, css and javascript
+Counter using html, css, bootstrap and javascript
